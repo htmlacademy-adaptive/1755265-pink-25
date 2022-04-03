@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Николай Баишев](https://up.htmlacademy.ru/adaptive/25/user/1755265).
-* Наставник: `Неизвестно`.
+* Наставник: [Наталья Налимова](https://htmlacademy.ru/profile/tuetfe).
 
 ---
 
