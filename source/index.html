@@ -1,12 +1,207 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Pink</title>
+</head>
 
-  </body>
+<body class="page__body">
+  <div class="main-nav__wrapper">
+    <header class="main-header">
+      <nav class="main-nav">
+        <a class="main-nav-logo">
+          <img src="../img/pink-logo-main-page.svg" width="74" height="23" alt="Логотип Pink на главной странице">
+        </a>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a>
+              Фотографии
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a>
+              Конкурс
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a>
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="phone-screen-image">
+      <h1>Взгляните на жизнь
+        иначе!</h1>
+      <div class="phone-screen__wrapper">
+        <img src="../img/phone.png" width="320" height="286" alt="Изображение руки с мобильником">
+        <img src="../img/screen.jpg" width="111" height="197" alt="Скрин мобильника">
+      </div>
+    </div>
+  </div>
+  <section class="download-application">
+    <h2 class="visually-hidden">Скачать приложение на Apple, Android и Microsoft</h2>
+    <div class="download-application__wrapper">
+      <header class="download-application__header">
+        <a class="download-application__button" href="#">Скачать приложение</a>
+      </header>
+      <div class="download-application-platforms__wrapper">
+        <img src="../source/img/apple-logo.png" width="47" height="56" alt="Логотип Apple">
+        <img src="../source/img/android-logo.png" width="43" height="47" alt="Логотип Android">
+        <img src="../source/img/microsoft-logo.png" width="44" height="41" alt="Логотип Microsoft">
+      </div>
+      <div class="platforms-container__description">
+        <p class="platforms-container__description description">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
+      </div>
+    </div>
+  </section>
+  <main class="main-page__wrapper">
+    <section class="main-page__content">
+      <h2 class="visually-hidden">Конец серым будням</h2>
+      <div class="main-page__description__wrapper">
+        <p class="main-page__description__intro-slogan">Устали от серости мегаполиса?
+          Нам есть, что вам
+          предложить!</p>
+      </div>
+    </section>
+    <section class="main-page__functions">
+      <div class="main-page__functions__wrapper">
+        <ul class="main-page__functions__list slider__list">
+          <li class="main-page__functions__list-item">
+            <h3 class="functions__title">Поднимает настроение</h3>
+            <p class="functions__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+              несколько кликов!</p>
+          </li>
+          <li class="main-page__functions__list-item">
+            <h3 class="functions__title">Меняет мир вокруг</h3>
+            <p class="functions__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+              усилить эффект</p>
+          </li>
+          <li class="main-page__functions__list-item">
+            <h3 class="functions__title">Заводит новых друзей</h3>
+            <p class="functions__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+              новых</p>
+          </li>
+        </ul>
+        <div class="main-page__functions__phone-screen-wrapper">
+          <aside>
+            <img class="functions__iphone-screen" src="../source/img/iphone.png" width="157" height="320"
+              alt="Изображение мобильника">
+            <img class="functions__iphone-screen__smile" src="../source/img/iphone-screen-smile.jpg" width="136"
+              height="245" alt="Скрин смайлика с экрана мобильника">
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section class="reviews">
+    <h2 class="visually-hidden">Отзывы пользователей</h2>
+    <div class="reviews__wrapper slider">
+      <h3 class="reviews__user-name">Николай Петров</h3>
+      <p class="reviews__user-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+        привычные серые вещи!
+        А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      <p class="reviews__toggles slider__toggles">
+        <button class="slider__toggle slider__toggle--current" type="button">1</button>
+        <button class="slider__toggle" type="button">2</button>
+        <button class="slider__toggle" type="button">3</button>
+      </p>
+    </div>
+  </section>
+  <section class="rates">
+    <h2 class="visually-hidden">Доступные тарифы</h2>
+    <div class="rates__wrapper slider">
+      <table class="rates__table">
+        <tr>
+          <th class="visually-hidden"></th>
+          <th>База 1,99 USD</th>
+          <th class="rates__table-hit rates__table-hit-current">Стандарт 3,99 USD</th>
+          <th>Анлим 9,99 USD</th>
+        </tr>
+        <tr>
+          <td>Розовый фильтр</td>
+          <td class="rates__table-swoosh"></td>
+          <td class="rates__table-swoosh"></td>
+          <td class="rates__table-swoosh"></td>
+        </tr>
+        <tr>
+          <td>Смайлики</td>
+          <td class="rates__table-swoosh"></td>
+          <td class="rates__table-swoosh"></td>
+          <td class="rates__table-x"></td>
+        </tr>
+        <tr>
+          <td>Комментарии</td>
+          <td class="rates__table-x"></td>
+          <td class="rates__table-x"></td>
+          <td class="rates__table-swoosh"></td>
+        </tr>
+      </table>
+      <p class="reviews__toggles slider__toggles">
+        <button class="slider__toggle" type="button">1</button>
+        <button class="slider__toggle  slider__toggle--current" type="button">2</button>
+        <button class="slider__toggle" type="button">3</button>
+      </p>
+    </div>
+  </section>
+  <section class="contacts">
+    <h2 class="visually-hidden">Контакты</h2>
+    <div class="contacts__wrapper contacts__wrapper-main">
+      <div class="contacts__items">
+        <p class="contacts__slogan">Остались вопросы?
+          Свяжитесь с нами!</p>
+        <p class="contacts__title">Звоните:</p>
+        <div class="contacts__number">
+          <a href="#">+7 (812) 555-66-66</a>
+        </div>
+        <p class="contacts__title">Пишите:</p>
+        <div class="contacts__email">
+          <a href="#">mail@htmlacademy.ru</a>
+        </div>
+        <p class="contacts__title">Приезжайте в гости:</p>
+        <div class="contacts__address">
+          <a href="#">ул. Большая
+            Конюшенная, 19/8</a>
+        </div>
+      </div>
+    </div>
+    <div class="contacts__map-wrapper">
+      <div class="contacts__map">
+        <img src="../source/img/map.jpg" width="320" height="200" alt="Карта проезда">
+        <img class="contacts__map-marker" src="../source/img/map-marker.png" width="36" height="36"
+          alt="Маркер местоположения">
+      </div>
+    </div>
+  </section>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="main-footer__logos">
+        <img src="../source/img/glasses.png" width="59" height="40" alt="Логотип Очки">
+        <img src="../source/img/pink.png" width="74" height="23" alt="Логотип Pink">
+      </div>
+      <div class="main-footer__socials">
+        <img src="../source/img/social-item-vk.png" width="54" height="54" alt="Логотип VK">
+        <img src="../source/img/social-item-tg.png" width="54" height="54" alt="Логотип Telegram">
+        <img src="../source/img/social-item-ytube.png" width="54" height="54" alt="Логотип YouTube">
+      </div>
+      <div class="main-footer__academy">
+        <p class="main-footer__academy-description">Разработано</p>
+        <img src="../source/img/html-academy.png" width="27" height="34" alt="Логотип HTML Academy">
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
