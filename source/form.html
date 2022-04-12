@@ -8,12 +8,11 @@
     путешествие с Пинк</title>
 </head>
 
-<body class="page__body">
-  <div class="page__body__wrapper">
-    <h1 class="visually-hidden">Приложение Pink</h1>
+<body class="page-body">
+  <div class="page-body__wrapper">
     <header class="main-header">
       <nav class="main-nav">
-        <a class="main-nav-logo">
+        <a class="main-nav-logo" href="index.html">
           <img src="img/pink-logo-main-page.svg" width="74" height="23" alt="Логотип Pink на главной странице">
         </a>
         <button class="main-nav__toggle" type="button">
@@ -31,7 +30,7 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
+            <a class="site-list__link--current" href="#">
               Конкурс
             </a>
           </li>
@@ -51,90 +50,62 @@
   </div>
   <main class="main-page">
     <section class="filling">
-      <h2 class="filling__title">
+      <h2 class="visually-hidden">Заполнение данных</h2>
+      <p class="filling__title">
         Поделитесь своей историей и получите
         шанс выиграть ценный приз — 1000
         миль на вашу бонусную карту!
-      </h2>
+      </p>
       <form class="filling__form" action="#" method="post">
         <fieldset>
-          <legend class="filling__name">Фамилия:</legend>
-          <input type="text" name="last-name" id="last-name" placeholder="Укажите фамилию *">
-          <label for="last-name"></label>
+          <legend class="visually-hidden">Ваши Ф.И.О.</legend>
+          <label><span class="filling__form-title">Фамилия</span><input type="text" name="last-name"
+              placeholder="Укажите фамилию *"></label>
+          <label><span class="filling__form-title">Имя</span><input type="text" name="first-name"
+              placeholder="Введите ваше имя *"></label>
+          <label><span class="filling__form-title">Отчество</span><input type="text" name="second-name"
+              placeholder="Ну и отчество тоже"></label>
         </fieldset>
         <fieldset>
-          <legend class="filling__name">Имя:</legend>
-          <input type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *">
-          <label for="first-name"></label>
+          <legend class="filling__title">Ваши безбашенные
+            достижения в путешествии</legend>
+          <label class="filling__form-container">Сделал селфи с акулой<input type="checkbox" name="shark-selfie"
+              checked>
+            Сделал селфи с акулой</label>
+          <label class="filling__form-container">Обгорел на пляже<input type="checkbox" name="beach-burned"
+              checked></label>
+          <label class="filling__form-container">Видел Чака Норриса<input type="checkbox" name="beach-burned"
+              checked></label>
+          <label class="filling__form-container">Накупил сувениров<input type="checkbox" name="bought-souvenir"></label>
+          <label class="filling__form-container">Удержал башню<input type="checkbox" name="held-tower" checked></label>
+          <label class="filling__form-container">Разгромил отель<input type="checkbox" name="crushed-hotel"></label>
         </fieldset>
         <fieldset>
-          <legend class="filling__name">Отчество:</legend>
-          <input type="text" name="second-name" id="second-name" placeholder="Ну и отчество тоже">
-          <label for="second-name"></label>
+          <legend class="visually-hidden">Заполнение контактных данных</legend>
+          <label class="filling__form-container"><span class="filling__form-title">Номер телефона</span><input
+              type="tel" name="telephone" placeholder="Номер, пожалуйста"></label>
+          <label class="filling__form-container"><span class="filling__form-title">Адрес почты</span><input type="email"
+              name="email" placeholder="Введите почту *"></label>
         </fieldset>
-      </form>
-    </section>
-    <section class="achievements">
-      <h3 class="achievements__title">Ваши безбашенные
-        достижения в путешествии</h3>
-      <form class="achievements__form" action="#" method="post">
         <fieldset>
-          <input type="checkbox" name="shark-selfie" id="shark-selfie" checked>
-          <label for="shark-selfie">Сделал селфи с акулой</label>
-          <input type="checkbox" name="beach-burned" id="beach-burned" checked>
-          <label for="beach-burned">Обгорел на пляже</label>
-          <input type="checkbox" name="saw-chuck" id="saw-chuck">
-          <label for="saw-chuck">Видел Чака Норриса</label>
-          <input type="checkbox" name="bought-souvenir" id="bought-souvenir">
-          <label for="bought-souvenir">Накупил сувениров</label>
-          <input type="checkbox" name="held-tower" id="held-tower" checked>
-          <label for="held-tower">Удержал башню</label>
-          <input type="checkbox" name="crushed-hotel" id="crushed-hotel">
-          <label for="crushed-hotel">Разгромил отель</label>
+          <legend class="filling__title">С каким приложением
+            путешествовали?</legend>
+          <label class="filling__form-container">Pink для iOS<input type="radio" name="radio-platform"></label>
+          <label class="filling__form-container">Pink на Android<input type="radio" name="radio-platform"></label>
+          <label class="filling__form-container">Windows Phone<input type="radio" name="radio-platform"></label>
         </fieldset>
-      </form>
-    </section>
-    <section class="communications">
-      <h3 class="visually-hidden">Заполнение контактных данных</h3>
-      <form class="communications__form">
-        <fieldset>
-          <legend class="communications__name">Номер телефона</legend>
-          <input type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
-          <label for="telephone"></label>
-          <div class="communications__name">Адрес почты</div>
-          <input type="email" name="email" id="email" placeholder="Введите почту *">
-          <label for="email"></label>
-        </fieldset>
-      </form>
-    </section>
-    <section class="travel">
-      <h3 class="travel__title">С каким приложением
-        путешествовали?</h3>
-      <form class="travel__form">
-        <fieldset>
-          <input type="radio" name="radio-ios" id="radio-ios" checked>
-          <label for="radio-ios">Pink для iOS</label>
-          <input type="radio" name="radio-android" id="radio-android">
-          <label for="radio-android">Pink на Android</label>
-          <input type="radio" name="radio-windows" id="radio-windows">
-          <label for="radio-windows">Windows Phone</label>
-        </fieldset>
-      </form>
-    </section>
-    <section class="emotions">
-      <h3 class="emotions__title">Опишите свои эмоции</h3>
-      <form class="emotions__form">
-        <input type="text" name="describe-emotions" id="describe-emotions">
-        <label for="describe-emotions"></label>
+        <label class="filling__title">Опишите свои эмоции<textarea
+            name="filling__emotions-textarea">Опишите свои эмоции</textarea></label>
         <button class="button emotions-button" type="submit">Отправить форму</button>
+        <p class="filling__emotions__required-text">* — обязательные поля</p>
       </form>
-      <p class="emotions__required">* — обязательные поля</p>
     </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <a class="main-footer__link-logo"><img src="img/glasses.png" width="59" height="40" alt="Логотип Очки"></a>
-      <a class="main-footer__link-logo"><img src="img/pink.png" width="74" height="23" alt="Логотип Pink"></a>
+      <a class="main-footer__link-logo" href="index.html"><img src="img/glasses.png" width="59" height="40"
+          alt="Логотип Очки">
+        <img src="img/pink.png" width="74" height="23" alt="Логотип Pink"></a>
       <div class="main-footer-socials">
         <ul class="main-footer__socials-list">
           <li class="socials-list-item"><a href="https://vk.com"><img src="img/social-item-vk.png" width="54"

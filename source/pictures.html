@@ -6,12 +6,11 @@
   <title>Фотографии пользователей</title>
 </head>
 
-<body class="page__body">
-  <div class="page__body__wrapper">
-    <h1 class="visually-hidden">Приложение Pink</h1>
+<body class="page-body">
+  <div class="page-body__wrapper">
     <header class="main-header">
       <nav class="main-nav">
-        <a class="main-nav-logo">
+        <a class="main-nav-logo" href="index.html">
           <img src="img/pink-logo-main-page.svg" width="74" height="23" alt="Логотип Pink на главной странице">
         </a>
         <button class="main-nav__toggle" type="button">
@@ -24,7 +23,7 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="pictures.html">
+            <a class="site-list__link--current" href="#">
               Фотографии
             </a>
           </li>
@@ -48,11 +47,12 @@
   </div>
   <main class="main-page">
     <section class="users">
-      <h2 class="visually-hidden">Фотографии пользователей</h2>
+      <h2 class="visually-hidden">Недавние обновления пользователей</h2>
       <p class="users__intro">Взгляните на фотографии, которые выкладывают пользователи!
         Видите, как не хватает ваших?</p>
-      <div class="users__wrapper">
-        <img class="users__image--hit" src="img/photo-anna.jpg" width="320" height="137"
+      <section class="users__wrapper--panorama">
+        <h2 class="visually-hidden">Фотография и текст от пользователя</h2>
+        <img class="users__image" src="img/photo-anna.jpg" width="320" height="137"
           alt="Фотография Анны в приложении Pink">
         <p class="users__name">Анна</p>
         <p class="users__publication-time">
@@ -66,8 +66,9 @@
           <img class="users__heart-image" src="img/heart.png" width="13" height="12" alt="Лайк-сердечко">
           <p class="users__heart-count">Нравится: 215</p>
         </div>
-      </div>
-      <div class="users__wrapper">
+      </section>
+      <section class="users__wrapper">
+        <h2 class="visually-hidden">Фотография и текст от пользователя</h2>
         <img class="users__image" src="img/photo-levon.jpg" width="280" height="180"
           alt="Фотография Левона в приложении Pink">
         <p class="users__name">Левон</p>
@@ -79,8 +80,9 @@
           <img class="users__heart-image" src="img/heart.png" width="13" height="12" alt="Лайк-сердечко">
           <p class="users__heart-count">Нравится: 356</p>
         </div>
-      </div>
-      <div class="users__wrapper">
+      </section>
+      <section class="users__wrapper">
+        <h2 class="visually-hidden">Фотография и текст от пользователя</h2>
         <img class="users__image" src="img/photo-anton.jpg" width="280" height="180"
           alt="Фотография Антона в приложении Pink">
         <p class="users__name">Антон</p>
@@ -92,8 +94,9 @@
           <img class="users__heart-image" src="img/heart.png" width="13" height="12" alt="Лайк-сердечко">
           <p class="users__heart-count">Нравится: 666</p>
         </div>
-      </div>
-      <div class="users__wrapper">
+      </section>
+      <section class="users__wrapper">
+        <h2 class="visually-hidden">Фотография и текст от пользователя</h2>
         <img class="users__image" src="img/photo-boris.jpg" width="280" height="180"
           alt="Фотография Бориса в приложении Pink">
         <p class="users__name">Борис</p>
@@ -105,8 +108,9 @@
           <img class="users__heart-image" src="img/heart.png" width="13" height="12" alt="Лайк-сердечко">
           <p class="users__heart-count">Нравится: 215</p>
         </div>
-      </div>
-      <div class="users__wrapper">
+      </section>
+      <section class="users__wrapper">
+        <h2 class="visually-hidden">Фотография и текст от пользователя</h2>
         <img class="users__image" src="img/photo-sergei.jpg" width="280" height="180"
           alt="Фотография Сергея в приложении Pink">
         <p class="users__name">Сергей</p>
@@ -118,8 +122,9 @@
           <img class="users__heart-image" src="img/heart.png" width="13" height="12" alt="Лайк-сердечко">
           <p class="users__heart-count">Нравится: 4</p>
         </div>
-      </div>
-      <div class="users__wrapper">
+      </section>
+      <section class="users__wrapper">
+        <h2 class="visually-hidden">Фотография и текст от пользователя</h2>
         <img class="users__image" src="img/photo-maxim.jpg" width="320" height="137"
           alt="Фотография Максима в приложении Pink">
         <p class="users__name">Максим</p>
@@ -131,8 +136,9 @@
           <img class="users__heart-image" src="img/heart.png" width="13" height="12" alt="Лайк-сердечко">
           <p class="users__heart-count">Нравится: 150</p>
         </div>
-      </div>
-      <div class="users__wrapper">
+      </section>
+      <section class="users__wrapper">
+        <h2 class="visually-hidden">Фотография и текст от пользователя</h2>
         <img class="users__image" src="img/photo-nadezhda.jpg" width="280" height="180"
           alt="Фотография Надежды в приложении Pink">
         <p class="users__name">Надежда</p>
@@ -144,42 +150,58 @@
           <img class="users__heart-image" src="img/heart.png" width="13" height="12" alt="Лайк-сердечко">
           <p class="users__heart-count">Нравится: 2560</p>
         </div>
-      </div>
+      </section>
+    </section>
+    <section class="processing">
+      <h2 class="visually-hidden">Инструмент обработки изображений</h2>
+      <p class="processing__intro">Затмите их всех!
+        Выкладывайте все, что накопилось в телефоне!</p>
+      <form class="processing__upload processing__upload-desk">
+        <img class="processing__image" src="img/processing-bc.jpg" width="280" height="374"
+          alt="Пример обработки фотографии с помощью Pink">
+        <ul class="processing__list">
+          <li class="processing__list-item--current">
+            <button class="button-apply" type="submit">Запостить</button>
+            <button class="button-reset" type="reset">Отмена</button>
+            <div class="range">
+              <div class="range__bar">
+                <span class="range__bar-inner"></span>
+              </div>
+              <button type="button" class="range__button range__button--left" aria-label="Обработать от"></button>
+              <button type="button" class="range__button range__button--right" aria-label="Обработать до"></button>
+            </div>
+          </li>
+          <li class="processing__list-item">
+            <button class="button-apply" type="submit">Запостить</button>
+            <button class="button-reset" type="reset">Отмена</button>
+            <div class="range">
+              <div class="range__bar">
+                <span class="range__bar-inner"></span>
+              </div>
+              <button type="button" class="range__button range__button--left" aria-label="Обработать от"></button>
+              <button type="button" class="range__button range__button--right" aria-label="Обработать до"></button>
+            </div>
+          </li>
+          <li class="processing__list-item">
+            <button class="button-apply" type="submit">Запостить</button>
+            <button class="button-reset" type="reset">Отмена</button>
+            <div class="range">
+              <div class="range__bar">
+                <span class="range__bar-inner"></span>
+              </div>
+              <button type="button" class="range__button range__button--left" aria-label="Обработать от"></button>
+              <button type="button" class="range__button range__button--right" aria-label="Обработать до"></button>
+            </div>
+          </li>
+        </ul>
+      </form>
     </section>
   </main>
-  <section class="processing">
-    <h3 class="visually-hidden">Инструмент обработки изображений</h3>
-    <p class="processing__intro">Затмите их всех!
-      Выкладывайте все, что накопилось в телефоне!</p>
-    <div class="processing__upload">
-      <img class="processing__image" src="img/processing-bc.jpg" width="280" height="374"
-        alt="Пример обработки фотографии с помощью Pink">
-      <div class="processing__icons">
-        <img class="processing__icon processing__icon--active" src="img/crop.png" width="44" height="44" alt="Обрезать">
-        <img class="processing__icon processing__icon--active" src="img/crop.png" width="48" height="43"
-          alt="Заполнить">
-        <img class="processing__icon processing__icon--active" src="img/contrast.png" width="32" height="32"
-          alt="Контраст">
-      </div>
-      <div class="wrapper">
-        <div class="range">
-          <div class="range__bar">
-            <span class="range__bar-inner"></span>
-          </div>
-          <button type="button" class="range__button range__button--left" aria-label="Обработать от"></button>
-          <button type="button" class="range__button range__button--right" aria-label="Обработать до"></button>
-        </div>
-      </div>
-      <div class="button-apply-reset">
-        <button class="button-apply" type="submit">Запостить</button>
-        <button class="button-reset" type="reset">Отмена</button>
-      </div>
-    </div>
-  </section>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <a class="main-footer__link-logo"><img src="img/glasses.png" width="59" height="40" alt="Логотип Очки"></a>
-      <a class="main-footer__link-logo"><img src="img/pink.png" width="74" height="23" alt="Логотип Pink"></a>
+      <a class="main-footer__link-logo" href="index.html"><img src="img/glasses.png" width="59" height="40"
+          alt="Логотип Очки">
+        <img src="img/pink.png" width="74" height="23" alt="Логотип Pink"></a>
       <div class="main-footer-socials">
         <ul class="main-footer__socials-list">
           <li class="socials-list-item"><a href="https://vk.com"><img src="img/social-item-vk.png" width="54"
