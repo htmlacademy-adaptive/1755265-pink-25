@@ -30,7 +30,7 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link--current" href="#">
+            <a class="site-list__link site-list__link--current" href="#">
               Конкурс
             </a>
           </li>
@@ -56,45 +56,51 @@
         шанс выиграть ценный приз — 1000
         миль на вашу бонусную карту!
       </p>
-      <form class="filling__form" action="#" method="post">
+      <form class="filling-form" action="#" method="post">
         <fieldset>
           <legend class="visually-hidden">Ваши Ф.И.О.</legend>
-          <label><span class="filling__form-title">Фамилия</span><input type="text" name="last-name"
-              placeholder="Укажите фамилию *"></label>
-          <label><span class="filling__form-title">Имя</span><input type="text" name="first-name"
-              placeholder="Введите ваше имя *"></label>
-          <label><span class="filling__form-title">Отчество</span><input type="text" name="second-name"
-              placeholder="Ну и отчество тоже"></label>
+          <label class="filling-form__label"><span class="filling-form__title-name">Фамилия</span><input type="text"
+              name="last-name" placeholder="Укажите фамилию *"></label>
+          <label class="filling-form__label"><span class="filling-form__title-name">Имя</span><input type="text"
+              name="first-name" placeholder="Введите ваше имя *"></label>
+          <label class="filling-form__label"><span class="filling-form__title-name">Отчество</span><input type="text"
+              name="second-name" placeholder="Ну и отчество тоже"></label>
         </fieldset>
         <fieldset>
           <legend class="filling__title">Ваши безбашенные
             достижения в путешествии</legend>
-          <label class="filling__form-container">Сделал селфи с акулой<input type="checkbox" name="shark-selfie"
-              checked>
+          <label class="filling-form__label"><span class="filling__title-achievements">Сделал селфи с
+              акулой</span><input type="checkbox" name="shark-selfie" checked>
             Сделал селфи с акулой</label>
-          <label class="filling__form-container">Обгорел на пляже<input type="checkbox" name="beach-burned"
-              checked></label>
-          <label class="filling__form-container">Видел Чака Норриса<input type="checkbox" name="beach-burned"
-              checked></label>
-          <label class="filling__form-container">Накупил сувениров<input type="checkbox" name="bought-souvenir"></label>
-          <label class="filling__form-container">Удержал башню<input type="checkbox" name="held-tower" checked></label>
-          <label class="filling__form-container">Разгромил отель<input type="checkbox" name="crushed-hotel"></label>
+          <label class="filling-form__label"><span class="filling-form__title-achievements">Обгорел на
+              пляже</span><input type="checkbox" name="beach-burned" checked></label>
+          <label class="filling-form__label"><span class="filling-form__title-achievements">Видел Чака
+              Норриса</span><input type="checkbox" name="beach-burned" checked></label>
+          <label class="filling-form__label"><span class="filling-form__title-achievements">Накупил
+              сувениров</span><input type="checkbox" name="bought-souvenir"></label>
+          <label class="filling-form__label"><span class="filling-form__title-achievements">Удержал башню</span><input
+              type="checkbox" name="held-tower" checked></label>
+          <label class="filling-form__label"><span class="filling-form__title-achievements">Разгромил отель</span><input
+              type="checkbox" name="crushed-hotel"></label>
         </fieldset>
         <fieldset>
           <legend class="visually-hidden">Заполнение контактных данных</legend>
-          <label class="filling__form-container"><span class="filling__form-title">Номер телефона</span><input
+          <label class="filling-form__label"><span class="filling-form__title-contacts">Номер телефона</span><input
               type="tel" name="telephone" placeholder="Номер, пожалуйста"></label>
-          <label class="filling__form-container"><span class="filling__form-title">Адрес почты</span><input type="email"
-              name="email" placeholder="Введите почту *"></label>
+          <label class="filling-form__label"><span class="filling-form__title-contacts">Адрес почты</span><input
+              type="email" name="email" placeholder="Введите почту *"></label>
         </fieldset>
         <fieldset>
           <legend class="filling__title">С каким приложением
             путешествовали?</legend>
-          <label class="filling__form-container">Pink для iOS<input type="radio" name="radio-platform"></label>
-          <label class="filling__form-container">Pink на Android<input type="radio" name="radio-platform"></label>
-          <label class="filling__form-container">Windows Phone<input type="radio" name="radio-platform"></label>
+          <label class="filling-form__label"><span class="filling-form__title-platforms">Pink для iOS</span><input
+              type="radio" name="radio-platform"></label>
+          <label class="filling-form__label"><span class="filling-form__title-platforms">Pink на Android</span><input
+              type="radio" name="radio-platform"></label>
+          <label class="filling-form__label"><span class="filling-form__title-platforms">Windows Phone</span><input
+              type="radio" name="radio-platform"></label>
         </fieldset>
-        <label class="filling__title">Опишите свои эмоции<textarea
+        <label class="filling__title"><span class="filling-form__title-emotions">Опишите свои эмоции</span><textarea
             name="filling__emotions-textarea">Опишите свои эмоции</textarea></label>
         <button class="button emotions-button" type="submit">Отправить форму</button>
         <p class="filling__emotions__required-text">* — обязательные поля</p>
@@ -106,14 +112,14 @@
       <a class="main-footer__link-logo" href="index.html"><img src="img/glasses.png" width="59" height="40"
           alt="Логотип Очки">
         <img src="img/pink.png" width="74" height="23" alt="Логотип Pink"></a>
-      <div class="main-footer-socials">
-        <ul class="main-footer__socials-list">
-          <li class="socials-list-item"><a href="https://vk.com"><img src="img/social-item-vk.png" width="54"
-                height="54" alt="Логотип VK"></a></li>
-          <li class="socials-list-item"><a href="https://web.telegram.org"><img src="img/social-item-tg.png" width="54"
-                height="54" alt="Логотип Telegram"></a></li>
-          <li class="socials-list-item"><a href="https://www.youtube.com"><img src="img/social-item-ytube.png"
-                width="54" height="54" alt="Логотип YouTube"></a></li>
+      <div class="socials">
+        <ul class="socials-list">
+          <li class="socials-list__item"><a class="socials-list__link" href="https://vk.com"><img
+                src="img/social-item-vk.png" width="54" height="54" alt="Логотип VK"></a></li>
+          <li class="socials-list__item"><a class="socials-list__link" href="https://web.telegram.org"><img
+                src="img/social-item-tg.png" width="54" height="54" alt="Логотип Telegram"></a></li>
+          <li class="socials-list__item"><a class="socials-list__link" href="https://www.youtube.com"><img
+                src="img/social-item-ytube.png" width="54" height="54" alt="Логотип YouTube"></a></li>
         </ul>
       </div>
       <div class="main-footer__academy">
