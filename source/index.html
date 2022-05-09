@@ -45,8 +45,6 @@
       </nav>
     </header>
     <div class="phone-screen">
-      <p class="phone-screen__description">Взгляните на жизнь
-        иначе!</p>
       <div class="phone-screen__image">
         <img src="img/phone-screen.png" width="320" height="286" alt="Изображение руки с мобильником">
       </div>
@@ -156,27 +154,30 @@
         <table class="rates__table">
           <tr>
             <th class="visually-hidden"></th>
-            <th class="rates__table-name">База 1,99 USD</th>
-            <th class="rates__table-name rates__table-name--current">Стандарт 3,99 USD</th>
-            <th class="rates__table-name">Анлим 9,99 USD</th>
+            <th class="rates__table-name"><span class="rates__table-rate">База</span><span
+                class="rates__table-price">1,99 USD</span></th>
+            <th class="rates__table-name rates__table-name--current"><span
+                class="rates__table-rate">Стандарт</span><span class="rates__table-price">3,99 USD</span></th>
+            <th class="rates__table-name"><span class="rates__table-rate">Анлим</span><span
+                class="rates__table-price">9,99 USD</span></th>
           </tr>
           <tr>
             <td class="rates__table-option">Розовый фильтр</td>
-            <td class="rates__table-swoosh"></td>
-            <td class="rates__table-swoosh"></td>
-            <td class="rates__table-swoosh"></td>
+            <td class="rates__table-value rates__table-value--yes"><span class="visually-hidden">Галочка</span></td>
+            <td class="rates__table-value rates__table-value--yes"><span class="visually-hidden">Галочка</span></td>
+            <td class="rates__table-value rates__table-value--yes"><span class="visually-hidden">Галочка</span></td>
           </tr>
           <tr>
             <td class="rates__table-option">Смайлики</td>
-            <td class="rates__table-swoosh"></td>
-            <td class="rates__table-swoosh"></td>
-            <td class="rates__table-x"></td>
+            <td class="rates__table-value rates__table-value--no"><span class="visually-hidden">Крестик</span></td>
+            <td class="rates__table-value rates__table-value--yes"><span class="visually-hidden">Галочка</span></td>
+            <td class="rates__table-value rates__table-value--yes"><span class="visually-hidden">Галочка</span></td>
           </tr>
           <tr>
             <td class="rates__table-option">Комментарии</td>
-            <td class="rates__table-x"></td>
-            <td class="rates__table-x"></td>
-            <td class="rates__table-swoosh"></td>
+            <td class="rates__table-value rates__table-value--no"><span class="visually-hidden">Крестик</span></td>
+            <td class="rates__table-value rates__table-value--no"><span class="visually-hidden">Крестик</span></td>
+            <td class="rates__table-value rates__table-value--yes"><span class="visually-hidden">Галочка</span></td>
           </tr>
         </table>
         <p class="rates__toggles slider__toggles">
@@ -202,8 +203,8 @@
           </div>
           <p class="contacts__title">Приезжайте в гости:</p>
           <div class="contacts__address">
-            <a class="contacts__way" href="#">ул. Большая
-              Конюшенная, 19/8</a>
+            <p class="contacts__way">ул. Большая
+              Конюшенная, 19/8</p>
           </div>
         </div>
       </div>
