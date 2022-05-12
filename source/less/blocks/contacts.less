@@ -17,16 +17,26 @@
   color: @rose-red;
 }
 
-@media (min-width: @tablet-width) {
-  .contacts {
+.contacts-map__picture {
+  display: none;
+}
+
+@media (min-width: @mobile-width) {
+  .contacts__items {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .contacts {
+@media (min-width: @tablet-width) {
+  .contacts__items {
     display: flex;
-    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__items {
+    display: grid;
   }
 }

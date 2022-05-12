@@ -1,7 +1,17 @@
+.rates {
+  background-color: @grey;
+}
+
 .rates__table-name {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
+  background-color: @navy;
+  min-width: 152px;
+}
+
+.rates__table {
+  border: 2px solid @light-grey;
 }
 
 .rates__table-option {
@@ -9,4 +19,36 @@
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+  background-color: @white;
+}
+
+.rates__table-value--yes {
+  position: relative;
+  background-image: url("/img/yes.svg");
+  background-position: center;
+  width: 31px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-color: @white;
+}
+
+.rates__table-value--no {
+  background-image: url("/img/no.svg");
+  background-position: center;
+  width: 27px;
+  height: 27px;
+  background-repeat: no-repeat;
+  background-color: @white;
+}
+
+.rates__table-price {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.rates__table-rate,
+.rates__table-price {
+  color: @white;
 }

@@ -1,0 +1,45 @@
+.stopwatch {
+  background-color: @grey;
+}
+
+.stopwatch__img {
+  position: relative;
+  padding: 20px 54px 72px 0;
+  margin-bottom: 108px;
+}
+
+.stopwatch__slogan {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  color: @black;
+}
+
+.stopwatch__description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.stopwatch__more {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: @rose-red;
+  text-decoration-line: underline;
+}
+
+@media (min-width: @mobile-width) {
+  .stopwatch {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .stopwatch {
+    display: flex;
+  }
+}
