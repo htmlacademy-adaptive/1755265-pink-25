@@ -2,12 +2,14 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
+  text-align: center;
 }
 
 .contacts__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
+  text-align: center;
 }
 
 .contacts__way {
@@ -15,14 +17,23 @@
   font-size: 24px;
   line-height: 33px;
   color: @rose-red;
+  text-align: center;
 }
 
 .contacts-map__picture {
   display: none;
 }
 
+.contacts__number {
+  text-align: center;
+}
+
+.contacts__email {
+  text-align: center;
+}
+
 @media (min-width: @mobile-width) {
-  .contacts__items {
+  .contacts__wrapper {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -30,13 +41,13 @@
 }
 
 @media (min-width: @tablet-width) {
-  .contacts__items {
+  .contacts__wrapper {
     display: flex;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .contacts__items {
+  .contacts__wrapper {
     display: grid;
   }
 }

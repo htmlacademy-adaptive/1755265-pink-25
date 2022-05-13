@@ -11,7 +11,7 @@
   line-height: 24px;
 }
 
-.functions__wrapper {
+.functions {
   background-color: @grey;
 }
 
@@ -20,8 +20,9 @@
 }
 
 @media (min-width: @tablet-width) {
-  .functions {
+  .functions__wrapper {
     display: flex;
+    flex-direction: row-reverse;
   }
 }
 
@@ -62,14 +63,14 @@
 }
 
 &--img-1::after {
-  background-image: url("img/deskimgtrash.png");
+  background-image: url("../img/deskimgtrash.png");
 }
 
 
 &--img-2::after {
-  background-image: url("img/deskimgsmile.png");
+  background-image: url("../img/deskimgsmile.png");
 }
 
 &--img-3::after {
-  background-image: url("img/deskimgredtrash.png");
+  background-image: url("../img/deskimgredtrash.png");
 }
