@@ -206,15 +206,15 @@ body {
     background-position: center;
     background-repeat: no-repeat;
   }
-}
---img-1::after {
-  background-image: url("../img/deskimgtrash.png");
-}
---img-2::after {
-  background-image: url("../img/deskimgsmile.png");
-}
---img-3::after {
-  background-image: url("../img/deskimgredtrash.png");
+  .functions__list-item--img-1::after {
+    background-image: url("img/deskimgtrash.png");
+  }
+  .functions__list-item--img-2::after {
+    background-image: url("img/deskimgsmile.png");
+  }
+  .functions__list-item--img-3::after {
+    background-image: url("img/deskimgredtrash.png");
+  }
 }
 .main-footer__academy-description {
   font-weight: 400;
@@ -493,7 +493,8 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #D22856;
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 @media (min-width: 320px) {
   .stopwatch {
@@ -523,12 +524,12 @@ body {
 }
 @media (min-width: 1200px) {
   .container {
-    min-width: 1200px;
+    max-width: 1200px;
   }
 }
 @media (min-width: 660px) {
   .container {
-    min-width: 660px;
+    max-width: 660px;
   }
 }
 /*# sourceMappingURL=style.css.map */
