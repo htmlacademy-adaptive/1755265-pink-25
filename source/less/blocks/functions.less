@@ -3,6 +3,11 @@
   font-size: 18px;
   line-height: 24px;
   color: @black;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 400px;
+    width: @desktop-width;
+  }
 }
 
 .functions-description {
@@ -27,10 +32,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .functions__list {
-    display: none;
-  }
-
   .functions__list-slider {
     display: flex;
     list-style: none;
@@ -61,15 +62,15 @@
     }
 
     &--img-1::after {
-      background-image: url("img/deskimgtrash.png");
+      background-image: url("../img/deskimgtrash.png");
     }
 
     &--img-2::after {
-      background-image: url("img/deskimgsmile.png");
+      background-image: url("../img/deskimgsmile.png");
     }
 
     &--img-3::after {
-      background-image: url("img/deskimgredtrash.png");
+      background-image: url("../img/deskimgredtrash.png");
     }
   }
 }

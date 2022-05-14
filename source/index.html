@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page-body container">
-  <div class="page-body__wrapper container">
-    <header class="main-header container">
+<body class="page-body ">
+  <div class="page-body__wrapper ">
+    <header class="main-header ">
       <nav class="main-nav">
         <a href="" class="logo">
           <svg class="logo__mobile" width="74" height="23" viewBox="0 0 74 23" fill="none"
@@ -108,15 +108,15 @@
         </ul>
       </nav>
     </header>
-    <h1 class="page-body__title container">Взгляните на жизнь
+    <h1 class="page-body__title">Взгляните на жизнь
       иначе!</h1>
-    <div class="phone-screen container">
-      <div class="phone-screen__image container">
+    <div class="phone-screen">
+      <div class="phone-screen__image">
         <img src="img/phone-screen.png" width="320" height="286" alt="Изображение руки с мобильником">
       </div>
     </div>
   </div>
-  <section class="download-application container">
+  <section class="download-application">
     <h2 class="visually-hidden">Скачать приложение на Apple, Android и Microsoft</h2>
     <div class="download-application__wrapper">
       <header class="download-application__header">
@@ -137,7 +137,7 @@
       </div>
     </div>
   </section>
-  <main class="main-page container">
+  <main class="main-page">
     <section class="capabilities">
       <h2 class="visually-hidden">Возможности приложения Pink</h2>
       <p class="capabilities__slogan"><span>Устали от серости мегаполиса?</span>
@@ -146,7 +146,7 @@
       </p>
       <section class="functions container">
         <div class="functions__wrapper container">
-          <ul class="functions__list functions__list-slider">
+          <ul class="functions__list functions__list-slider container">
             <li class="functions__list-item functions__list-item--img-1">
               <h3 class="functions__title">Поднимает настроение</h3>
               <p class="functions-description">Приложение позволит вам победить осеннюю хандру и
@@ -168,10 +168,8 @@
             </li>
           </ul>
           <div class="phone-screen-wrapper">
-            <div>
-              <img class="phone-screen-wrapper__image" src="img/phone-screen-functions.png" width="157" height="320"
-                alt="Изображение мобильника">
-            </div>
+            <img class="phone-screen-wrapper__image" src="img/phone-screen-functions.png" width="157" height="320"
+              alt="Изображение мобильника">
           </div>
         </div>
       </section>
@@ -180,12 +178,12 @@
       <h2 class="visually-hidden">Блок с секундомером</h2>
       <img class="stopwatch__img" src="img/stopwatch.svg" width="298" height="345" alt="Секундомер">
       <div class="stopwatch__wrapper">
-      <p class="stopwatch__slogan">Эффект
-        на 24 часа!</p>
-      <p class="stopwatch__description">Британские ученые провели исследования
-        и доказали, что положительный эффект
-        от использования приложения длится целые сутки!</p>
-      <a class="stopwatch__more" href="">Узнать больше об исследовании</a>
+        <p class="stopwatch__slogan">Эффект
+          на 24 часа!</p>
+        <p class="stopwatch__description">Британские ученые провели исследования
+          и доказали, что положительный эффект
+          от использования приложения длится целые сутки!</p>
+        <a class="stopwatch__more" href="">Узнать больше об исследовании</a>
       </div>
     </section>
     <section class="reviews">
@@ -231,12 +229,15 @@
           <tr>
             <th class="visually-hidden"></th>
             <th class="rates__table-name"><span class="rates__table-rate">База</span>
-              <span class="rates__table-price">1,99 USD</span></th>
+              <span class="rates__table-price">1,99 USD</span>
+            </th>
             <th class="rates__table-name rates__table-name--current">
               <span class="rates__table-rate">Стандарт</span>
-                <span class="rates__table-price">3,99 USD</span></th>
+              <span class="rates__table-price">3,99 USD</span>
+            </th>
             <th class="rates__table-name"><span class="rates__table-rate">Анлим</span>
-              <span class="rates__table-price">9,99 USD</span></th>
+              <span class="rates__table-price">9,99 USD</span>
+            </th>
           </tr>
           <tr>
             <td class="rates__table-option">Розовый фильтр</td>
@@ -265,21 +266,20 @@
       </div>
     </section>
     <section class="contacts">
-      <h2 class="visually-hidden">Контакты</h2>
+      <h4 class="contacts__slogan">Остались вопросы?
+        Свяжитесь с нами!</h4>
       <div class="contacts__wrapper contacts__wrapper--main">
         <div class="contacts__items">
-          <p class="contacts__slogan">Остались вопросы?
-            Свяжитесь с нами!</p>
-          <p class="contacts__title">Звоните:</p>
-          <div class="contacts__number">
+          <div class="contacts__items-wrapper">
+            <p class="contacts__title">Звоните:</p>
             <a class="contacts__way" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </div>
-          <p class="contacts__title">Пишите:</p>
-          <div class="contacts__email">
+          <div class="contacts__items-wrapper">
+            <p class="contacts__title">Пишите:</p>
             <a class="contacts__way" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </div>
-          <p class="contacts__title">Приезжайте в гости:</p>
-          <div class="contacts__address">
+          <div class="contacts__items-wrapper">
+            <p class="contacts__title">Приезжайте в гости:</p>
             <p class="contacts__way">ул. Большая
               Конюшенная, 19/8</p>
           </div>
@@ -296,7 +296,7 @@
       </div>
     </section>
   </main>
-  <footer class="main-footer container">
+  <footer class="main-footer">
     <div class="main-footer__wrapper">
       <a class="main-footer__link-logo" href="index.html"><img src="img/glasses.png" width="59" height="40"
           alt="Логотип Очки">

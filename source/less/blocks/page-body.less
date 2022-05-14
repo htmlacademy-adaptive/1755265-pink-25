@@ -1,7 +1,18 @@
+.page-body {
+  @media (max-width: @tablet-width) {
+    min-width: 660px;
+  }
+
+  @media (max-width: @desktop-width) {
+    min-width: 1200px;
+  }
+}
+
 .page-body__wrapper {
   background-image: url("../img/back-mobile.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .page-body__title {

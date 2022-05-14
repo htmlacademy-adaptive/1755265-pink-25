@@ -2,14 +2,12 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
-  text-align: center;
 }
 
 .contacts__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
-  text-align: center;
 }
 
 .contacts__way {
@@ -17,37 +15,30 @@
   font-size: 24px;
   line-height: 33px;
   color: @rose-red;
-  text-align: center;
 }
 
-.contacts-map__picture {
-  display: none;
-}
 
-.contacts__number {
-  text-align: center;
-}
-
-.contacts__email {
-  text-align: center;
-}
-
-@media (min-width: @mobile-width) {
-  .contacts__wrapper {
+@media (min-width: @tablet-width) {
+  .contacts__items {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: @tablet-width;
+    text-align: center;
     flex-wrap: wrap;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .contacts__wrapper {
+@media (min-width: @desktop-width) {
+  .contacts__items {
     display: flex;
+    flex-direction: row;
+    width: @desktop-width;
+    text-align: center;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .contacts__wrapper {
-    display: grid;
-  }
+//gpeg-map//
+
+.contacts-map__picture {
+  display: none;
 }
