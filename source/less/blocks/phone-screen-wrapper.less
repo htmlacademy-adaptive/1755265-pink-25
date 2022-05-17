@@ -1,0 +1,20 @@
+.phone-screen-wrapper__image {
+  @media (min-width: @desktop-width) {
+    display: none;
+    width: @desktop-width;
+  }
+
+  @media (min-width: @mobile-width) {
+    margin-left: 0;
+  }
+}
+
+.phone-screen-wrapper {
+  @media (min-width: @mobile-width) {
+    padding-left: 200px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+  }
+}
