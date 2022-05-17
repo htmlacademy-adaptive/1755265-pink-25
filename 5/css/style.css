@@ -176,17 +176,19 @@ body {
   font-size: 14px;
   line-height: 24px;
 }
-.functions {
-  background-color: #F2F2F2;
-}
-.functions__list-item {
-  list-style-type: none;
+@media (min-width: 1200px) {
+  .functions {
+    background-color: #F2F2F2;
+  }
 }
 @media (min-width: 660px) {
-  .functions__wrapper {
+  .functions {
     display: flex;
     flex-direction: row-reverse;
   }
+}
+.functions__list-item {
+  list-style-type: none;
 }
 @media (min-width: 1200px) {
   .functions__list-slider {
@@ -477,7 +479,6 @@ body {
 }
 .stopwatch {
   background-color: #F2F2F2;
-  padding-left: 195px;
 }
 @media (min-width: 660px) {
   .stopwatch {
@@ -500,7 +501,7 @@ body {
 }
 @media (min-width: 1200px) {
   .stopwatch__img {
-    margin-left: 150px;
+    margin-left: 0;
   }
 }
 .stopwatch__slogan {
@@ -509,6 +510,14 @@ body {
   font-size: 30px;
   line-height: 30px;
   color: #000000;
+}
+.stopwatch__row {
+  display: flex;
+}
+@media (min-width: 1200px) {
+  .stopwatch__row {
+    padding-left: 40px;
+  }
 }
 .stopwatch__wrapper {
   padding-left: 30px;
