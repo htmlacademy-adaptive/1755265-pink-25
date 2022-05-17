@@ -1,6 +1,5 @@
 .stopwatch {
   background-color: @grey;
-  padding-left: 195px;
 
   @media (min-width: @tablet-width) {
     background-color: @white;
@@ -20,7 +19,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 150px;
+    margin-left: 0;
   }
 }
 
@@ -30,6 +29,14 @@
   font-size: 30px;
   line-height: 30px;
   color: @black;
+}
+
+.stopwatch__row {
+  display: flex;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 40px;
+  }
 }
 
 .stopwatch__wrapper {
